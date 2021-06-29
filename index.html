@@ -6,34 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            .containerx { 
+                height: 200px;
+                position: relative;
+                border: 3px solid green; 
+                }
+
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                }
+            </style>
 </head>
 
 <body>
-    <div style="background-image: url('banner.jpg'); width: 100%; height: 52%;  background-repeat: no-repeat; background-size: cover; margin-bottom: 15px;">
-        <!-- <div class="d-flex align-items-center"> -->
-            <!-- <div class="container"> -->
-                <div class="row " >
-                  <div class="col-sm">
-                  </div>
-                  <div class="col-sm" style=" text-align: center; margin-top: 10%;">
-                    <h1 style=" font-weight: bold;">Bài thi kết thúc sau</h1>
-                    <ul >
-                        <li
-                            style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase; margin-left: -15px;">
-                            <span class="text-center" id="hours" style=" display: block;font-size: 2rem; font-weight: bold;"></span>Hours</li>
-                        <li
-                            style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase;">
-                            <span class="text-center" id="minutes" style=" display: block;font-size: 2rem; font-weight: bold;"></span>Minutes</li>
-                        <li
-                            style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase;">
-                            <span class="text-center" id="seconds" style=" display: block;font-size: 2rem; font-weight: bold;"></span>Seconds</li>
-                    </ul>
-                    <h3 id="demo" class="text-center" style="color: red; "></h3>
-                  </div>
-                  <div class="col-sm">
-                  </div>
-                </div>
-              <!-- </div> -->
+    <div class="containerx" style="background-image: url('banner.jpg'); width: 100%; height: 52%;  background-repeat: no-repeat; background-size: cover; margin-bottom: 15px;">
+        <div class="center">
+            <h1 class="text-center ">Bài thi kết thúc sau:</h1>
+        <ul class="text-center ">
+            <li
+                style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+                <span class="text-center" id="hours" style=" display: block;font-size: 2rem;"></span>Hours</li>
+            <li
+                style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+                <span class="text-center" id="minutes" style=" display: block;font-size: 2rem;"></span>Minutes</li>
+            <li
+                style="display: inline-block;font-size: 1em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+                <span class="text-center" id="seconds" style=" display: block;font-size: 2rem;"></span>Seconds</li>
+        </ul>
+        </div>
     </div>
     <div class="row">
         <div class="col">
